@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MyRestUI</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/styles.css"/>     
+    </head>
+
+    <body>
+        <h1>Consume RESTful API with JQuery, AJAX</h1>
+            <div class="leftArea">
+                <div>   
+                    <h2>Search tweet messages</h2>
+                    <label>Keyword</label>
+                    <input type="text" id="keyword"/>
+                    <button type = "submit", id="btnTweetSearch">Search</button>
+                </div>
+                <div>
+                    <h2>Search followers</h2>
+                    <button type = "submit", id="btnFollowerSearch">Search</button>
+                </div>  	
+                <div>
+                <h2>Follow user</h2>
+                   <label>Person id:</label>
+                    <input type="text" id="followedPersonId"/>
+                    <button type = "submit", id="btnFollow">Follow</button>
+                </div>
+                <div>
+                    <h2>Unfollow user</h2>
+                    <label>Person id:</label>
+                    <input type="text" id="unFollowedPersonId"/>
+                    <button type = "submit", id="btnUnfollow">Unfollow</button>
+                </div>
+                <div>
+                 <h2>Compute shortest distance</h2>
+                   <label>Start person:</label>
+                    <input type="text" id="endPesonId"/>
+                    <button type = "submit", id="btnComputeDis">Compute</button>
+                </div>
+                <div>
+                 <h2>List all users paired with their most "popular" follower </h2>
+                   <button type = "submit", id="btnFindPairs">Find</button>
+                </div>
+            </div>
+
+            <div class = "rightArea">
+                <h2>JSON Respone:</h2>
+                <div id = "response"></div>
+                   
+            </div>
+            <div class = "rightTop">
+                <button type = "submit", id="btnLogout">Logout</button>
+            </div> 
+        <script src="http://code.jquery.com/jquery-3.2.1.js", 
+                integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=", crossorigin="anonymous"></script>
+        <script type="text/javascript", src="js/app.js"></script>
+    </body>
+</html>
