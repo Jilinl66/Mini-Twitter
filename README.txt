@@ -5,7 +5,7 @@ April 17, 2017
 Finished all parts of the code challenge. Some boundary situations still need to be considered and some functions still need to be optimized due to the time limit.
 
 
-*********** LOGIN IN ***********
+*********** LOGIN  ***********
 Default home page is “http://localhost:8080”
 This page will automatically redirect to “http://localhost:8080/login”, which asking for the username and password.
 After login successfully, page will redirect to the home page index.html
